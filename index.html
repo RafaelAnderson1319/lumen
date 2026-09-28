@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lumen Hair Studio — beleza que inspira." />
+    <title>Lumen Hair Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="site-shell">
+      <header class="topbar" id="topo">
+        <a class="brand" href="#topo" aria-label="Lumen Hair Studio, início">
+          <span class="brand-mark">✾</span><span><strong>LUMEN</strong><small>HAIR STUDIO</small></span>
+        </a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+        <nav id="menu"><a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#portfolio">Portfólio</a><a href="#contato">Contato</a></nav>
+      </header>
+
+      <section class="hero" id="inicio">
+        <div class="hero-copy"><p class="eyebrow">LUMEN HAIR STUDIO</p><h1>BELEZA<br />QUE <em>INSPIRA</em></h1><p>Luxury Hair. Timeless You.</p><button class="gold-button booking-trigger" type="button">AGENDAR HORÁRIO</button></div>
+        <div class="hero-image" role="img" aria-label="Modelo com cabelos castanhos ondulados em um salão elegante"></div>
+      </section>
+
+      <section class="philosophy">
+        <div class="flower">♢</div><div><p class="eyebrow">NOSSA ESSÊNCIA</p><h2>NOSSA FILOSOFIA</h2><p>Acreditamos que grandes cabelos são mais do que estilo — são confiança, individualidade e expressão. Nossa missão é criar experiências personalizadas que revelam a sua melhor versão.</p></div>
+      </section>
+
+      <section class="services" id="servicos"><p class="eyebrow">EXPERIÊNCIA LUMEN</p><h2>NOSSOS SERVIÇOS</h2><div class="service-grid">
+        <article data-service><span>✂</span><h3>CORTE &amp; ESTILO</h3><p>Cortes precisos e estilos criados especialmente para você.</p></article>
+        <article data-service><span>〰</span><h3>COR &amp; MECHAS</h3><p>Cor luminosa, dimensão natural e resultados sofisticados.</p></article>
+        <article data-service><span>♨</span><h3>TRATAMENTOS</h3><p>Rituais nutritivos para fios saudáveis e radiantes.</p></article>
+      </div></section>
+
+      <section class="love"><p class="eyebrow">PALAVRAS DE QUEM VIVEU</p><h2>CLIENT LOVE</h2><div class="quote-grid">
+        <blockquote><div class="avatar one"></div><p>“A equipe é incrível! Sempre saio me sentindo mais confiante e bonita.”</p><cite>— Sarah J.</cite></blockquote>
+        <blockquote><div class="avatar two"></div><p>“A melhor experiência de salão. Meu cabelo nunca esteve tão bonito.”</p><cite>— Jessica M.</cite></blockquote>
+        <blockquote><div class="avatar three"></div><p>“Profissionais atenciosos, talentosos e que realmente escutam.”</p><cite>— Olivia R.</cite></blockquote>
+      </div><div class="dots" aria-label="1 de 3 depoimentos"><i></i><i class="active"></i><i></i></div></section>
+
+      <section class="about" id="sobre"><div class="about-photo" role="img" aria-label="Espaço interno do Lumen Hair Studio"></div><div class="about-copy"><p class="eyebrow">O ESTÚDIO</p><h2>SOBRE NÓS</h2><p>No Lumen Hair Studio, unimos criatividade, expertise e produtos premium para entregar resultados excepcionais. Nossos estilistas acompanham tendências para criar um visual que é inteiramente seu.</p><a href="#contato" class="gold-button">CONHEÇA O ESTÚDIO</a></div></section>
+
+      <section class="journal" id="portfolio"><p class="eyebrow">INSPIRAÇÃO &amp; CUIDADO</p><h2>DO NOSSO SALÃO</h2><div class="journal-grid">
+        <article><div class="post-img hair"></div><h3>TENDÊNCIAS DE COR</h3><p>Descubra os tons que vão marcar a estação.</p><a href="#contato">LER MAIS →</a></article>
+        <article><div class="post-img tools"></div><h3>RITUAL DE CUIDADO</h3><p>Especialistas revelam segredos para fios saudáveis.</p><a href="#contato">LER MAIS →</a></article>
+        <article><div class="post-img scene"></div><h3>POR TRÁS DAS CADEIRAS</h3><p>Um olhar sobre nossa rotina criativa.</p><a href="#contato">LER MAIS →</a></article>
+      </div></section>
+
+      <footer id="contato"><div class="footer-brand"><a class="brand" href="#topo"><span class="brand-mark">✾</span><span><strong>LUMEN</strong><small>HAIR STUDIO</small></span></a><p>Beleza que se torna parte de você.</p></div><div><h3>CONTATO</h3><p>+55 (11) 98765-6543<br />hello@lumenhairstudio.com<br />Rua Bela Vista, 100<br />São Paulo — SP</p></div><div><h3>HORÁRIOS</h3><p>Ter–Sex: 9h às 19h<br />Sábado: 9h às 17h<br />Domingo: fechado</p></div></footer>
+    </main>
+    <dialog class="booking-dialog"><button class="dialog-close" aria-label="Fechar">×</button><p class="eyebrow">LUMEN HAIR STUDIO</p><h2>SEU MOMENTO COMEÇA AQUI</h2><p>Escolha o serviço e continuamos o agendamento pelo WhatsApp.</p><form><label>Nome<input name="nome" required placeholder="Seu nome" /></label><label>WhatsApp<input name="telefone" required type="tel" placeholder="(00) 00000-0000" /></label><label>Serviço desejado<select name="servico" required><option value="" selected disabled>Selecione um serviço</option></select></label><button class="gold-button" type="submit">SOLICITAR AGENDAMENTO</button><output aria-live="polite"></output></form></dialog>
+    <style>select{width:100%;margin-top:5px;padding:11px;border:1px solid #cbb9a5;background:#fffaf3;font:14px var(--sans);color:var(--ink)}</style>
+    <script src="script.js"></script>
+  </body>
+</html>
