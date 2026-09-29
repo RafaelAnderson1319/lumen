@@ -1,0 +1,20 @@
+/* Adaptação de escala: o conteúdo usa a área útil em monitores grandes. */
+@media (min-width: 1200px) {
+  .site-shell {
+    width: calc(100% - 64px);
+    max-width: 1600px;
+    margin: 32px auto;
+  }
+
+  .topbar { padding-inline: 54px; }
+  .hero { height: clamp(540px, 42vw, 670px); }
+  .hero-copy { padding-left: clamp(56px, 6vw, 112px); }
+  .philosophy { padding-left: 18%; padding-right: 26%; }
+  .services, .love, .journal { padding-inline: 11%; }
+  .about-copy { padding: clamp(48px, 5vw, 84px); }
+  footer { padding-inline: 11%; }
+}
+
+@media (min-width: 1700px) {
+  .site-shell { max-width: 1760px; }
+}
